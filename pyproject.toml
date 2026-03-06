@@ -3,14 +3,17 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "fix8"
+name = "fixer8"
 version = "0.1.0"
 description = "Automatic Flake8 fixer for Python projects"
 readme = "README.md"
 requires-python = ">=3.8"
 authors = [
-    { name="manuelcyrus", email="manuelcyrus.mda@gmail.com" }
+        { name="manuelcyrus", email="manuelcyrus.mda@gmail.com" }
 ]
 
 [project.scripts]
-fix8 = "flakefix.cli:main"
+fix8 = "fix8.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

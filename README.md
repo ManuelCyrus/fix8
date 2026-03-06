@@ -30,7 +30,7 @@ The `fix8` workflow follows a persistent correction cycle:
 
 ### Via Pip
 ```bash
-pip install fix8
+pip install fixer8
 ```
 
 
