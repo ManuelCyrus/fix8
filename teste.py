@@ -1,5 +1,5 @@
 import subprocess
-from src import fix
+import src.fix
 
 flake = subprocess.run(
     ["flake8", "."],
@@ -7,5 +7,7 @@ flake = subprocess.run(
     text=True
 )
 
+for linha in flake.stdout.splitlines():
+    if linha.strip():
+        fixfix8(linha) 
 
-fix.fix8(flake.stdout)
