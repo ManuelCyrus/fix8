@@ -28,9 +28,9 @@ RULES = {
 
     "E301": ("add_line", 1),  # expected 1 blank line
     "E302": ("add_line", 2),  # expected 2 blank lines
-    "E303": ("delete_blank", None),  # too many blank lines
+    "E303": ("add_line", "\n"),  # too many blank lines
     "E304": ("delete", None),   # blank line after decorator
-    "E305": ("add_line", 2),  # expected 2 blank lines after class/function
+    "E305": ("add_line", 2), # expected 2 blank lines after class/function
 
     "W293": ("delete", None),   # blank line contains whitespace
     "W391": ("delete", None),   # blank line at end of file
