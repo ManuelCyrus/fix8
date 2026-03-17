@@ -1,6 +1,6 @@
 import argparse
 from pathlib import Path
-from runner import run_fix
+from .runner import run_fix
 
 
 class Colors:
@@ -12,6 +12,7 @@ class Colors:
     FAIL = "\033[91m"
     ENDC = "\033[0m"
     BOLD = "\033[1m"
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -54,7 +55,7 @@ def main():
 
     print(f"{Colors.OKGREEN}\nAll files fixed!{Colors.ENDC}")
 
-    print(f"{Colors.BOLD}Don't forget to contribute to this project! {Colors.ENDC}",end="-> ")
+    print(f"{Colors.BOLD}Don't forget to contribute to this project! {Colors.ENDC}", end="->")
     print(f"{Colors.OKBLUE}https://github.com/ManuelCyrus/fix8{Colors.ENDC}")
 
 

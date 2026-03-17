@@ -1,5 +1,5 @@
 from collections import defaultdict
-from rules import RULES
+from .rules import RULES
 
 
 def generate_patches(parsed):

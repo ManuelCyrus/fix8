@@ -1,8 +1,8 @@
 import subprocess
-from parser import parse_errors
-from patches import generate_patches, sort_patches
-from fixer import apply_patches
-from rules import RULES
+from .parser import parse_errors
+from .patches import generate_patches, sort_patches
+from .fixer import apply_patches
+from .rules import RULES
 
 
 def run_fix(file):
